@@ -1,0 +1,28 @@
+:root {
+  --branditude-purple: #7c49bd;
+  --branditude-purple-dark: #5f3897;
+  --branditude-yellow: #ffff00;
+  --branditude-lavender: #f3ecff;
+  --branditude-off-white: #fefff8;
+  --branditude-ink: #0a0a0a;
+  --branditude-body-grey: #6d6868;
+  --branditude-hint-grey: #a79cc4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--branditude-purple);
+}
+
+a:hover {
+  color: var(--branditude-purple-dark);
+}
