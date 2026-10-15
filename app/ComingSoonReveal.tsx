@@ -164,7 +164,7 @@ export default function ComingSoonReveal() {
               maxWidth: 560,
             }}
           >
-            Branditude Ltd builds sharper brands for ambitious teams. We
+            Branditude Limited builds sharper brands for ambitious teams. We
             shape strategy, identity, content and digital moments that help
             people choose you.
           </p>
@@ -241,6 +241,38 @@ export default function ComingSoonReveal() {
           />
         </div>
       </div>
+
+      {/* Who stands behind the site, for anyone checking the company: always on
+          top of the drag panel, and not part of the drag. */}
+      <footer
+        onPointerDown={(e) => e.stopPropagation()}
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: 4,
+          padding: "12px 16px",
+          background: "var(--branditude-off-white)",
+          borderTop: "1px solid rgba(124,73,189,0.18)",
+          color: "var(--branditude-ink)",
+          fontSize: 12,
+          lineHeight: 1.6,
+          textAlign: "center",
+          cursor: "auto",
+          userSelect: "text",
+        }}
+      >
+        <div>
+          <strong>Branditude Limited</strong> · RC 1995669 · 350 Borno Way, Lagos, Nigeria
+        </div>
+        <div style={{ color: "var(--branditude-body-grey)" }}>
+          Makers of Mutua:{" "}
+          <a href="https://www.mutua.ng" target="_blank" rel="noopener noreferrer">
+            www.mutua.ng
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

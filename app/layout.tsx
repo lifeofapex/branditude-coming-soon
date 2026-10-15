@@ -10,11 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Branditude — Coming Soon",
   description:
-    "Branditude Ltd builds sharper brands for ambitious teams. We shape strategy, identity, content and digital moments that help people choose you.",
-  robots: {
-    index: false,
-    follow: false,
-  },
+    "Branditude Limited builds sharper brands for ambitious teams. We shape strategy, identity, content and digital moments that help people choose you.",
 };
 
 export default function RootLayout({
